@@ -113,7 +113,7 @@
                 {
                  "name":"playAudio",
                  "type":"string",
-                 "value":"..\/audio\/SilasHadikosong.mp4"
+                 "value":"..\/sounds\/SilasHadikosong.mp4"
                 }],
          "type":"tilelayer",
          "visible":true,
