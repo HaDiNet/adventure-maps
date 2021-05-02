@@ -1,8 +1,11 @@
 # WorkAdventure Map Starter Kit
 
-This is a copy of a [starter kit](https://github.com/thecodingmachine/workadventure-map-starter-kit) to help you build your own map for [WorkAdventure](https://workadventu.re).
+Forked from [DigitaleGesellschaft](https://github.com/DigitaleGesellschaft/workadventure-map-bitwaescherei),
+which is in turn a copy of a [starter kit](https://github.com/thecodingmachine/workadventure-map-starter-kit) to help you build your own map for [WorkAdventure](https://workadventu.re).
 
 Additional tilesets are from the [chaosz0ne](https://github.com/chaosz0ne/shared).
+
+See [index.html](index.html) for copyright and legal information.
 
 ## Tools you will need
 
