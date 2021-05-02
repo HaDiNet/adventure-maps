@@ -107,13 +107,13 @@
  "nextobjectid":1,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.5.0",
+ "tiledversion":"1.6.0",
  "tileheight":32,
  "tilesets":[
         {
          "columns":16,
          "firstgid":1,
-         "image":"tilesets_deviant_milkian_1.png",
+         "image":"..\/pngs\/tilesets_deviant_milkian_1.png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -838,7 +838,7 @@
         {
          "columns":8,
          "firstgid":257,
-         "image":"floortileset.png",
+         "image":"..\/pngs\/floortileset.png",
          "imageheight":256,
          "imagewidth":256,
          "margin":0,
@@ -906,7 +906,7 @@
         {
          "columns":32,
          "firstgid":321,
-         "image":"chaos_zone_shared.png",
+         "image":"..\/pngs\/chaos_zone_shared.png",
          "imageheight":2048,
          "imagewidth":1024,
          "margin":0,
@@ -919,7 +919,7 @@
         {
          "columns":8,
          "firstgid":2369,
-         "image":"fantasy.png",
+         "image":"..\/pngs\/fantasy.png",
          "imageheight":4096,
          "imagewidth":256,
          "margin":0,
@@ -1041,7 +1041,7 @@
         {
          "columns":32,
          "firstgid":3393,
-         "image":"haus_a.png",
+         "image":"..\/pngs\/haus_a.png",
          "imageheight":2048,
          "imagewidth":1024,
          "margin":0,
@@ -1054,7 +1054,7 @@
         {
          "columns":32,
          "firstgid":5441,
-         "image":"zw.png",
+         "image":"..\/pngs\/zw.png",
          "imageheight":2048,
          "imagewidth":1024,
          "margin":0,
@@ -1067,7 +1067,7 @@
         {
          "columns":32,
          "firstgid":7489,
-         "image":"tiles\/ZRPG Beach\/ZRPGBeach.png",
+         "image":"..\/pngs\/ZRPGBeach.png",
          "imageheight":1024,
          "imagewidth":1024,
          "margin":0,
@@ -1080,7 +1080,7 @@
         {
          "columns":16,
          "firstgid":8513,
-         "image":"house_inside.png",
+         "image":"..\/pngs\/house_inside.png",
          "imageheight":448,
          "imagewidth":512,
          "margin":0,
@@ -1093,7 +1093,7 @@
         {
          "columns":16,
          "firstgid":8737,
-         "image":"upholstery.png",
+         "image":"..\/pngs\/upholstery.png",
          "imageheight":1024,
          "imagewidth":512,
          "margin":0,
@@ -1106,7 +1106,7 @@
         {
          "columns":6,
          "firstgid":9249,
-         "image":"WaterAndFire.png",
+         "image":"..\/pngs\/WaterAndFire.png",
          "imageheight":256,
          "imagewidth":192,
          "margin":0,
@@ -1390,7 +1390,7 @@
         {
          "columns":8,
          "firstgid":9297,
-         "image":"tileset_16x16_final_1.png",
+         "image":"..\/pngs\/tileset_16x16_final_1.png",
          "imageheight":304,
          "imagewidth":272,
          "margin":0,
@@ -1402,6 +1402,6 @@
         }],
  "tilewidth":32,
  "type":"map",
- "version":1.5,
+ "version":"1.6",
  "width":20
 }
