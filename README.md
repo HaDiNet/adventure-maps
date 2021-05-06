@@ -1,63 +1,77 @@
-# WorkAdventure Map Starter Kit
+# HaDiKo-WorkAdventure-Maps
 
-Forked from [DigitaleGesellschaft](https://github.com/DigitaleGesellschaft/workadventure-map-bitwaescherei),
-which is in turn a copy of a [starter kit](https://github.com/thecodingmachine/workadventure-map-starter-kit) to help you build your own map for [WorkAdventure](https://workadventu.re).
+Hier werden die Maps für das HaDiKo [WorkAdventure](https://workadventu.re) gehosted,
+zu erreichen unter https://play.adventure.hadiko.de.
 
-Additional tilesets are from the [chaosz0ne](https://github.com/chaosz0ne/shared).
+Geforked von [DigitaleGesellschaft](https://github.com/DigitaleGesellschaft/workadventure-map-bitwaescherei),
+was wiederrum eine Kopie des offiziellen [starter kit](https://github.com/thecodingmachine/workadventure-map-starter-kit) ist.
 
-See [index.html](index.html) for copyright and legal information.
+In der [index.html](https://maps.adventure.hadiko.de/hadiko/index.html) gibt es weitere Informationen zu Lizenzen und Urhebererecht.
 
-## Tools you will need
+## Eigene Maps beisteuern
 
-In order to build your own map for WorkAdventure, you need:
+Um das HaDiKo vollständig digital nachzubauen,
+sind wir auf deine Hilfe angewiesen.
+Hier ist erklärt, wie du helfen kannst.
 
-- the [Tiled editor](https://www.mapeditor.org/) software
-- "tiles" (i.e. images) to create your map (this starter kit provides a good default tileset for offices)
-- a web-server to serve your map (this starter kit proposes to use Github static pages as a web-server which is both free and performant)
+Die Maps bestehen aus meherern Layern von 32x32 pixel "Tiles".
 
-## Customizing your map
+### Tools die du brauchst
 
-Your map is already up and online. You need to customize it.
+Um Maps zu erstellen oder zu bearbeiten benötigst du:
 
-### Cloning the map
+- Den [Tiled editor](https://www.mapeditor.org/)
+- "Tiles", also 32x32-Pixel-Bilder aus denen die Map zusammengebaut wird.
+  Ein paar gute Tilesets sind in den [pngs](pngs/)- und [tiles](tiles/)-Ordnern zufinden.
+  Weiter findest du im Internet, z.B. auf:
+  - [itch.io](https://itch.io)
+  - [opengameart.org](https://opengameart.org)
+  - [deviantart.com](https://deviantart.com)
+- [npm](https://www.npmjs.com/) um deine Map zu testen.
 
-Start by cloning the map. If you are used to Git and GitHub, simply clone the map
-to your computer using your preferred tool and [jump to the next chapter](#loading-the-map-in-tiled).
+### Repository forken
 
-If you are new to Git, cloning the map means downloading the map to your computer.
-To do this, you will need Git, or a Git compatible tool. Our advice is to use
-[GitHub Desktop](https://desktop.github.com/).
+Zuerst musst du dieses Repository forken.
+In dem geforkten Repository führst du deine Änderungen durch und machst danach einen Pull Request auf.
 
-TODO: test and continue
+### Die Map in Tiled öffnen und bearbeiten
 
-### Loading the map in Tiled
+Unsere Maps liegen im [world](world/)-Ordner, z.B. [world/k1.json](world/k1.json)
+Ein paar Beispiel-/Testmaps findest du in [test](test/), oder [maps](maps/).
 
-The sample map is in the file `map.json`.
-You can load this file in [Tiled](https://www.mapeditor.org/).
+Du kannst die JSON-Datein in [Tiled](https://www.mapeditor.org/) öffnen.
+Um eine neue Map zu erstellen, lege mit Tiled eine Map in JSON-Format im [world](world/)-Ordner an.
 
-Now, it's up to you to edit the map and write your own map.
+Nun kannst du die Maps bearbeiten.
 
-Some resources regarding Tiled:
+Die Tiled software ist relativ intuitiv. Nichtdestotrotz hier ein paar Resourcen, falls du Anleitung brauchst:
 
 - [Tiled documentation](https://doc.mapeditor.org/en/stable/manual/introduction/)
 - [Tiled video tutorials](https://www.gamefromscratch.com/post/2015/10/14/Tiled-Map-Editor-Tutorial-Series.aspx)
 
-### About WorkAdventu.re maps
+### Wie WorkAdventure-Maps funktionieren
 
-In order to design a map that will be readable by WorkAdventure, you will have to respect some constraints.
+Damit deine Map von WorkAdventure geladen werden kann, musst du einige regeln beachten.
+Am besten liest du den offiziellen [WorkAdventure Map Building Guide](https://workadventu.re/map-building/wa-maps),
+der ist nicht so lang, man kann sich innerhalb von 20 Minuten durch alle Seiten durchklicken.
 
-In particular, you will need to:
+### Die Map ausprobieren
 
-- set a start position for the players
-- configure the "floor layer" (so that WorkAdventure can correctly display characters above the floor, but under the ceiling)
-- eventually, you can place exits that link to other maps
+Bevor du einen Pull Request erstellst, willst du deine Änderungen oder neuen Maps bestimmt ausprobieren.
+Hierzu kannst du einen lokalen Mapsserver starten, der deine Maps deinem Browser zur Verfügung stellst.
+Führe dazu im Repository die folgenden Commands aus:
+```
+npm install
+npm run start
+```
 
-All this is described in the [WorkAdventure documentation](https://github.com/thecodingmachine/workadventure/#designing-a-map).
-Please be sure to check it out. 
+Danach kannst du die Maps mit einer beliebigen WorkAdventure Instanz ausprobieren, am besten der vom HadiKo:
 
-### Pushing the map
+http://play.adventure.hadiko.de/_/global/localhost:8080/pfad/zur/map.json
 
-When your changes are ready, you need to "commit" and "push" the changes back to GitHub.
-Just wait a few minutes, and your map will be propagated automatically to the GitHub pages web-server.
+Also zum Beispiel:
 
-TODO: describe how to push
+http://play.adventure.hadiko.de/_/global/localhost:8080/world/k1.json
+
+Sobald du zufrieden bist, kannst du wie oben beschrieben einen Pull request erstellen.
+
