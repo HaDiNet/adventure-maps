@@ -73,5 +73,30 @@ Also zum Beispiel:
 
 http://play.adventure.hadiko.de/_/global/localhost:8080/world/k1.json
 
-Sobald du zufrieden bist, kannst du wie oben beschrieben einen Pull request erstellen.
+### Urheberrecht und Lizenzen
 
+Damit wir deine Map verwenden können, musst du damit einverstanden sein,
+sie unter einer [CC-BY-SA](http://creativecommons.org/licenses/by-sa/4.0/) Lizenz zu veröffentlichen.
+
+Füge hierzu in der [index.html](index.html) einen Vermerk unter "Original Contributions" hinzu.
+Entweder als zusätzlicher Name bei einer existierenden Map, oder als komplett neue Zeile.
+Diese hat das Format:
+```html
+<li><a href="$PFAD_ZUR_MAP.json"</a>: $NAME, $JAHR</li>
+```
+
+Wenn du zusätzliche Tilesets oder sonstige Resourcen einbindest,
+musst du je nach Lizenz des Quellmaterials diese vermutlich nennen.
+Füge dazu, ebenfalls in der [index.html](index.html) einen Vermerk der folgenden Form hinzu:
+
+```html
+<li>
+  <a href="$PFAD_ZUR_DATEI">$NAME_DES_WERKS</a>:
+  $URHEBER;
+  $LIZENZINFORMATION;
+  <a href="$LINK_ZUR_ORIGINALQUELLE">$LINK_ZUR_ORIGINALQUELLE</a>
+</li>
+```
+
+Die [index.html](index.html) kann unter https://maps.adventure.hadiko.de abgerufen werden
+und wird beim joinen auf der Start-Map von https://play.adventure.hadiko.de angezeigt.
