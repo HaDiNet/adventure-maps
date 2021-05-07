@@ -1,20 +1,20 @@
 # HaDiKo-WorkAdventure-Maps
 
-Hier werden die Maps für das HaDiKo [WorkAdventure](https://workadventu.re) gehosted,
-zu erreichen unter https://play.adventure.hadiko.de.
+Hier werden die Maps für das [WorkAdventure](https://workadventu.re) des HaDiKos gehosted.
+Dieses ist zu erreichen unter https://play.adventure.hadiko.de.
 
 Geforked von [DigitaleGesellschaft](https://github.com/DigitaleGesellschaft/workadventure-map-bitwaescherei),
 was wiederrum eine Kopie des offiziellen [starter kit](https://github.com/thecodingmachine/workadventure-map-starter-kit) ist.
 
-In der [index.html](https://maps.adventure.hadiko.de/hadiko/index.html) gibt es weitere Informationen zu Lizenzen und Urhebererecht.
+In der [index.html](https://maps.adventure.hadiko.de/hadiko/index.html) gibt es weitere Informationen zu Lizenzen und Urheberrechten.
 
 ## Eigene Maps beisteuern
 
 Um das HaDiKo vollständig digital nachzubauen,
-sind wir auf deine Hilfe angewiesen.
+sind wir auf deine Hilfe angewiesen!
 Hier ist erklärt, wie du helfen kannst.
 
-Die Maps bestehen aus meherern Layern von 32x32 pixel "Tiles".
+Die Maps bestehen aus mehreren Layern von 32x32 Pixel "Tiles".
 
 ### Tools die du brauchst
 
@@ -23,7 +23,7 @@ Um Maps zu erstellen oder zu bearbeiten benötigst du:
 - Den [Tiled editor](https://www.mapeditor.org/)
 - "Tiles", also 32x32-Pixel-Bilder aus denen die Map zusammengebaut wird.
   Ein paar gute Tilesets sind in den [pngs](pngs/)- und [tiles](tiles/)-Ordnern zufinden.
-  Weiter findest du im Internet, z.B. auf:
+  Weitere findest du im Internet, z.B. auf:
   - [itch.io](https://itch.io)
   - [opengameart.org](https://opengameart.org)
   - [deviantart.com](https://deviantart.com)
@@ -32,15 +32,15 @@ Um Maps zu erstellen oder zu bearbeiten benötigst du:
 ### Repository forken
 
 Zuerst musst du dieses Repository forken.
-In dem geforkten Repository führst du deine Änderungen durch und machst danach einen Pull Request auf.
+In dem geforkten Repository führst du deine Änderungen durch und öffnest danach einen Pull Request.
 
 ### Die Map in Tiled öffnen und bearbeiten
 
 Unsere Maps liegen im [world](world/)-Ordner, z.B. [world/k1.json](world/k1.json)
 Ein paar Beispiel-/Testmaps findest du in [test](test/), oder [maps](maps/).
 
-Du kannst die JSON-Datein in [Tiled](https://www.mapeditor.org/) öffnen.
-Um eine neue Map zu erstellen, lege mit Tiled eine Map in JSON-Format im [world](world/)-Ordner an.
+Du kannst die JSON-Dateien in [Tiled](https://www.mapeditor.org/) öffnen.
+Um eine neue Map zu erstellen, lege mit Tiled eine Map im JSON-Format im [world](world/)-Ordner an.
 
 Nun kannst du die Maps bearbeiten.
 
@@ -49,9 +49,16 @@ Die Tiled software ist relativ intuitiv. Nichtdestotrotz hier ein paar Resourcen
 - [Tiled documentation](https://doc.mapeditor.org/en/stable/manual/introduction/)
 - [Tiled video tutorials](https://www.gamefromscratch.com/post/2015/10/14/Tiled-Map-Editor-Tutorial-Series.aspx)
 
+Noch ein paar Dinge, die du beachten solltest:
+
+- Falls du noch nicht weißt wie viele Pixel deine Karte letztendlich groß sein soll,
+  kannst du einer Karte eine unbegrenzte Größe zuweisen beim Erstellen.
+  Bevor du die Karte testen kannst, solltest du darauf achten dass du diese Eigenschaft rückgängig machst
+  (Karte -> Karteneigenschaften -> Unbegrenzt)
+
 ### Wie WorkAdventure-Maps funktionieren
 
-Damit deine Map von WorkAdventure geladen werden kann, musst du einige regeln beachten.
+Damit deine Map von WorkAdventure geladen werden kann, musst du einige Regeln beachten.
 Am besten liest du den offiziellen [WorkAdventure Map Building Guide](https://workadventu.re/map-building/wa-maps),
 der ist nicht so lang, man kann sich innerhalb von 20 Minuten durch alle Seiten durchklicken.
 
